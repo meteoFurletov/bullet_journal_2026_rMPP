@@ -1,14 +1,14 @@
 import os
 import calendar
 from datetime import date, timedelta
-import config
+import bujo.config as config
 from src.infrastructure.pdf_adapter import FPDFAdapter
-from src.logic.journal_map import NavigationSpine
+from bujo.logic.journal_map import NavigationSpine
 from src.workers.grid_worker import GridInput
-from src.workers.daily_worker import DailyWorker, DailyInput
-from src.workers.weekly_worker import WeeklyWorker, WeeklyInput
-from src.workers.monthly_worker import MonthlyWorker, MonthlyInput
-from src.workers.index_worker import IndexWorker, IndexInput
+from bujo.workers.daily_worker import DailyWorker, DailyInput
+from bujo.workers.weekly_worker import WeeklyWorker, WeeklyInput
+from bujo.workers.monthly_worker import MonthlyWorker, MonthlyInput
+from bujo.workers.index_worker import IndexWorker, IndexInput
 
 
 def main():

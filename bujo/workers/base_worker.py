@@ -1,6 +1,6 @@
 from src.infrastructure.interfaces import PDFInterface
 from src.workers.grid_worker import GridWorker, GridInput
-import config
+import bujo.config as config
 
 
 class BaseWorker:

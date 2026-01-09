@@ -1,11 +1,11 @@
 from pydantic import BaseModel
 from src.infrastructure.interfaces import PDFInterface
-from src.workers.base_worker import BaseWorker
+from bujo.workers.base_worker import BaseWorker
 from src.workers.grid_worker import GridInput
 from datetime import date, timedelta
 import calendar
 from typing import List, Tuple, Optional
-import config
+import bujo.config as config
 
 
 # --- SECTION A: DATA CONTRACTS ---

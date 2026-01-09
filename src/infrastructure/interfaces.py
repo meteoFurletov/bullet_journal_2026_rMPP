@@ -11,7 +11,31 @@ class PDFInterface(ABC):
         pass
 
     @abstractmethod
+    def set_draw_color(self, r, g, b):
+        pass
+
+    @abstractmethod
+    def set_text_color(self, r, g, b):
+        pass
+
+    @abstractmethod
+    def set_line_width(self, width):
+        pass
+
+    @abstractmethod
     def rect(self, x, y, w, h, style=""):
+        pass
+
+    @abstractmethod
+    def line(self, x1, y1, x2, y2):
+        pass
+
+    @abstractmethod
+    def circle(self, x, y, r, style=""):
+        pass
+
+    @abstractmethod
+    def polygon(self, points, style=""):
         pass
 
     @abstractmethod
@@ -27,11 +51,11 @@ class PDFInterface(ABC):
         pass
 
     @abstractmethod
-    def set_font(self, family, style="", size=0):
+    def link(self, x, y, w, h, link):
         pass
 
     @abstractmethod
-    def set_text_color(self, r, g, b):
+    def set_font(self, family, style="", size=0):
         pass
 
     @abstractmethod
@@ -49,33 +73,13 @@ class PDFInterface(ABC):
         pass
 
     @abstractmethod
-    def line(self, x1, y1, x2, y2):
+    def add_font(self, family, style, fname):
         pass
 
     @abstractmethod
-    def set_draw_color(self, r, g, b):
+    def set_auto_page_break(self, auto, margin=0):
         pass
 
     @abstractmethod
-    def set_line_width(self, width):
-        pass
-
-    @abstractmethod
-    def polygon(self, points, style=""):
-        pass
-
-    @abstractmethod
-    def line(self, x1, y1, x2, y2):
-        pass
-
-    @abstractmethod
-    def polygon(self, points, style=""):
-        pass
-
-    @abstractmethod
-    def page_no(self):
-        pass
-
-    @abstractmethod
-    def add_font(self, family, style="", fname="", uni=False):
+    def set_margin(self, margin):
         pass

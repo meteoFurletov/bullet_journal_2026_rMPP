@@ -14,7 +14,7 @@ MONTHLY_TIMELINE_Y_OFFSET = 27  # Manual adjustment for day numbers in Monthly L
 
 # --- Colors (R, G, B) ---
 COLOR_PAPER = (252, 252, 250)
-COLOR_DOTS = (100, 100, 100)
+COLOR_DOTS = (0, 0, 0)
 COLOR_TEXT = (40, 40, 40)
 COLOR_INSTRUCT = (120, 120, 120)
 
